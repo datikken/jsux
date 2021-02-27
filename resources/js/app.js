@@ -11,11 +11,10 @@ import Navbar from './components/Navbar';
 
 document.addEventListener("DOMContentLoaded", evnt => {
     sticky(document);
-    // const game_1_canvas = document.getElementById("game_1");
+
     const floppy_game = document.querySelector('.floppy');
     const platformer_game = document.querySelector('.platformer');
 
-    // if(game_1_canvas) new Game(game_1_canvas);
     if (floppy_game) init_floppy();
     if (platformer_game) init_platformer();
 
