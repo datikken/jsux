@@ -11,7 +11,7 @@ if [[ ${1} -eq "--local" ]]
     php artisan storage:link
 then
     COMPOSER_MEMORY_LIMIT=-1 composer-php7.4 install
-    cp .env.example .env
+    cp .env.prod .env
     php7.4 artisan key:generate
     php7.4 artisan migrate:fresh
     php7.4 artisan storage:link
