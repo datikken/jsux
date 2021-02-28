@@ -168,8 +168,6 @@ html {
     width: 148px;
     -o-object-fit: cover;
        object-fit: cover;
-    -o-object-position: -1px 50%;
-       object-position: -1px 50%;
 }
 
 .m0 {
@@ -190,6 +188,9 @@ html {
 
 .pr0 {
     padding-right:0;
+}
+.pt10 {
+    padding-top: 10px;
 }
 .pl10 {
     padding-left: 10px;
