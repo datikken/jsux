@@ -4,6 +4,7 @@ use App\Http\Controllers\FilesController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\OfficeController;
 use App\Http\Controllers\GamesController;
+use App\Http\Controllers\ContactController;
 
 Route::get('/', function () {
     return view('welcome');

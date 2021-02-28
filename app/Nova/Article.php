@@ -8,7 +8,7 @@ use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\Trix;
-use Laravel\Nova\Tests\Fixtures\Boolean;
+use Laravel\Nova\Fields\Boolean;
 use Spatie\TagsField\Tags;
 
 class Article extends Resource
