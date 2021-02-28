@@ -12,6 +12,7 @@ class ContactController extends Controller
 
         $maildata = [
             'title' => 'Markdown email for you bro',
+            'message' => 'Fuck yo bro',
             'url' => 'jsux.fun'
         ];
 
