@@ -8,11 +8,11 @@ class ContactController extends Controller
 {
     public function sendDemoMail()
     {
-        $email = 'positronx@gmail.com';
+        $email = 'tikken23@gmail.com';
 
         $maildata = [
             'title' => 'Markdown email for you bro',
-            'url' => 'tikken23@gmail.com'
+            'url' => 'jsux.fun'
         ];
 
         Mail::to($email)->send(new SendDemoMail($maildata));
