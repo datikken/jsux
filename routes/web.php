@@ -22,6 +22,7 @@ Route::get('/platformer', function () {
 Route::get('/office_save_to_txt', [OfficeController::class,'save_to_txt']);
 Route::get('/display_files', [FilesController::class,'display_files']);
 
+Route::get('send-mail', [ContactController::class, 'sendDemoMail']);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
