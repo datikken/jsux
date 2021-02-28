@@ -2,7 +2,7 @@
 @section('content')
 
     <div class="tm-sidebar-left">
-        <livewire:tags/>
+{{--        <livewire:tags/>--}}
     </div>
 
     <div class="tm-main">
