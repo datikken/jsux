@@ -25,4 +25,9 @@ class GamesController extends Controller
     {
         return view('games.shooter.shooter');
     }
+
+    public function cattrap()
+    {
+        return view('games.cattrap.cattrap');
+    }
 }

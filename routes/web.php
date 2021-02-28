@@ -12,6 +12,7 @@ Route::get('/floppy', [GamesController::class, 'floppy'])->name('floppy');
 Route::get('/solitaire', [GamesController::class, 'solitaire'])->name('solitaire');
 Route::get('/chess', [GamesController::class, 'chess'])->name('chess');
 Route::get('/shooter', [GamesController::class, 'shooter'])->name('shooter');
+Route::get('/cattrap', [GamesController::class, 'cattrap'])->name('cattrap');
 
 
 

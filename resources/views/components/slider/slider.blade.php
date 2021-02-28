@@ -6,6 +6,28 @@
                 <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-5@m uk-grid">
                     <li>
                         <div class="uk-panel">
+                            <a class="slider_link" data-turbolinks="false" href="/chess"></a>
+                            <div class="uk-card-media-top">
+                                <img src="/images/games/chess.png" class="slider_image" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">AI chess</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-panel">
+                            <a class="slider_link" data-turbolinks="false" href="/cattrap"></a>
+                            <div class="uk-card-media-top">
+                                <img src="/images/games/cattrap/cattrap.png" class="slider_image" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">AI Cat Trap</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-panel">
                             <a class="slider_link" data-turbolinks="false" href="/shooter"></a>
                             <div class="uk-card-media-top">
                                 <img src="/images/games/shooter/shooter_cover.png" class="slider_image" alt="">
@@ -26,18 +48,7 @@
                             </div>
                         </div>
                     </li>
-                    <li>
 
-                        <div class="uk-panel">
-                            <a class="slider_link" data-turbolinks="false" href="/chess"></a>
-                            <div class="uk-card-media-top">
-                                <img src="/images/games/chess.png" class="slider_image" alt="">
-                            </div>
-                            <div class="uk-card-body">
-                                <h3 class="uk-card-title">AI chess</h3>
-                            </div>
-                        </div>
-                    </li>
 
                 </ul>
             </div>
