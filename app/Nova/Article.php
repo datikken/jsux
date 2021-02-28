@@ -7,8 +7,9 @@ use Laravel\Nova\Fields\DateTime;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\BelongsTo;
-use Spatie\TagsField\Tags;
 use Laravel\Nova\Fields\Trix;
+use Laravel\Nova\Tests\Fixtures\Boolean;
+use Spatie\TagsField\Tags;
 
 class Article extends Resource
 {
@@ -52,7 +53,10 @@ class Article extends Resource
             Tags::make('Tags'),
             BelongsTo::make('User'),
             DateTime::make('created_at'),
-            DateTime::make('updated_at')
+            DateTime::make('updated_at'),
+            Boolean::make('publish')
+                ->trueValue('Go')
+                ->falseValue('Stop')
         ];
     }
 
