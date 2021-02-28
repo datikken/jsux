@@ -11,8 +11,8 @@ class ContactController extends Controller
         $email = 'positronx@gmail.com';
 
         $maildata = [
-            'title' => 'Laravel 8|7 Mail Sending Example with Markdown',
-            'url' => 'https://www.positronx.io'
+            'title' => 'Markdown email for you bro',
+            'url' => 'tikken23@gmail.com'
         ];
 
         Mail::to($email)->send(new SendDemoMail($maildata));
