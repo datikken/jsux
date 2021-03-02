@@ -17,6 +17,7 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit-icons.min.js"></script>
 
+    <script src="https://js.stripe.com/v3"></script>
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     @livewireStyles
@@ -26,7 +27,7 @@
     <div id="app">
         @include('components.navbar.navbar')
 
-        <main class="uk-container uk-flex uk-flex-center uk-margin-bottom">
+        <main class="uk-container uk-flex uk-flex-left uk-margin-bottom">
             @yield('content')
         </main>
 

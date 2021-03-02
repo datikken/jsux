@@ -5,9 +5,20 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\OfficeController;
 use App\Http\Controllers\GamesController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\Subscriptions\PlanController;
+use App\Http\Controllers\Subscriptions\SubscriptionController;
+use App\Http\Livewire\Dashboard;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.welcome');
+});
+Route::get('/dashboard', [Dashboard::class,'account'])
+    ->name('dashboard')
+    ->middleware(['auth:sanctum', 'verified']);
+
+Route::group(['namespace' => 'Subscriptions'], function() {
+    Route::get('plans',[PlanController::class, 'plans']);
+    Route::get('subscriptions',[SubscriptionController::class, 'checkout']);
 });
 
 Route::get('/floppy', [GamesController::class, 'floppy'])->name('floppy');
@@ -24,7 +35,3 @@ Route::get('/office_save_to_txt', [OfficeController::class,'save_to_txt']);
 Route::get('/display_files', [FilesController::class,'display_files']);
 
 Route::get('send-mail', [ContactController::class, 'sendDemoMail']);
-
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
