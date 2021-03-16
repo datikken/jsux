@@ -6,7 +6,7 @@
     </div>
 
     <div class="tm-main">
-        {{--        @include('components.slider.slider')--}}
-        {{--        <livewire:articles/>--}}
+                @include('components.slider.slider')
+                <livewire:articles/>
     </div>
 @endsection
